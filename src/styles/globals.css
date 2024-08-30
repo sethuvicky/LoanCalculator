@@ -1,37 +1,119 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2 {
-  color: #333;
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Loan Calculator Form */
+.loan-calculator {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+  text-align: center;
+}
+
+.loan-calculator h1 {
+  font-size: 2.5rem;
+  color: #004d99;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .form-field {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-field label {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input[type='number'] {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type='number']:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
 }
 
 .error {
-  color: red;
+  color: #d9534f;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
+/* Button */
 button {
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
+  padding: 15px 30px;
+  background-color: #004d99;
+  color: #ffffff;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #003366;
 }
 
+button:active {
+  transform: scale(0.98);
+}
+
+/* Summary Display */
 .summary-display {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 20px;
   border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.summary-display h2 {
+  color: #004d99;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.summary-display p {
+  font-size: 1.1rem;
+  margin: 10px 0;
 }
