@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import FormField from '../components/FormField';
 import Button from '../components/Button';
 import SummaryDisplay from '../components/SummaryDisplay';
 import { calculateRepayment } from '../services/loanService';
